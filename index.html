@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<main class="container">
+    <h1>Study Planner</h1>
+    <p>วางแผนการเรียนของคุณได้ง่ายขึ้น</p>
+    
+    
+<div class="task-form">
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="พิมพ์งานที่ต้องทำ..."
+    >
+
+    <input
+        type="date"
+        id="taskDate"
+    >
+
+    <button id="addTaskButton">เพิ่มงาน</button>
+</div>
+
+
+    <section class="tasks">
+        <h2>My Tasks</h2>
+        <p>รายการงานที่ต้องทำ</p>
+        <p id="taskSummary">งานที่เหลือ: 0 งาน</p>
+        <div class="task-filters">
+    <button class="filter-button" data-filter="all">ทั้งหมด</button>
+    <button class="filter-button" data-filter="active">ยังไม่เสร็จ</button>
+    <button class="filter-button" data-filter="completed">เสร็จแล้ว</button>
+    <button id="clearCompletedButton">ล้างงานที่เสร็จแล้ว</button>
+</div>
+        <div class="task-item">
+        <input type="checkbox">
+        <span>ทำการบ้านคณิตศาสตร์</span>
+    </div>
+
+    <div class="task-item">
+        <input type="checkbox">
+        <span>อ่านหนังสือภาษาอังกฤษ</span>
+    </div>
+
+    <div class="task-item">
+        <input type="checkbox">
+        <span>เตรียมงานนำเสนอ</span>
+    </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
